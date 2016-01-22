@@ -36,7 +36,7 @@
 
     <dimen name="more_window_item_margin">12dp</dimen>
     <dimen name="learn_article_clock_icon">13dp</dimen>
-    <dimen name="learn_article_like_icon">26dp</dimen>
+    <dimen name="learn_article_like_icon">22dp</dimen>
     <dimen name="icon_post_height">56dp</dimen>
     <dimen name="icon_size_user_item">36dp</dimen>
 </resources>
