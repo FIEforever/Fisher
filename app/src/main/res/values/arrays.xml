@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_hot_keyword_test">
+        <item>芒果捞</item>
+        <item>锦江之星</item>
+        <item>鱼塘公</item>
+        <item>叮叮码头</item>
+        <item>香芋是缘</item>
+        <item>汉拿山</item>
+        <item>稻香酒家</item>
+        <item>水果捞</item>
+        <item>御龙斑鱼府</item>
+        <item>蒲记甜品</item>
+        <item>汉拿</item>
+        <item>稻香酒</item>
+        <item>水果</item>
+        <item>御龙斑鱼鱼</item>
+        <item>甜品</item>
+    </string-array>
+
+    <string-array name="shop_mode">
+        <item>车务商家</item>
+    </string-array>
+
+    <string-array name="order_shop_type">
+        <item>离我最近</item>
+        <item>好评优先</item>
+        <item>人气最高</item>
+    </string-array>
+
+    <string-array name="order_group_type">
+        <item>人气最高</item>
+        <item>折扣最大</item>
+        <item>价格最低</item>
+        <item>销量优先</item>
+    </string-array>
+
+    <string-array name="shop_mode_type">
+        <item>全部</item>
+        <item>只选团购</item>
+        <item>只选优惠</item>
+    </string-array>
+
+    <string-array name="other_people_amount">
+        <item>不限</item>
+        <item>单人</item>
+        <item>双人</item>
+        <item>3~4人</item>
+        <item>5~10人</item>
+        <item>10人以上</item>
+    </string-array>
+</resources>

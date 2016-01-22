@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_view_pager"
+        android:layout_marginTop="@dimen/title_bar_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/background_light"
+        android:elevation="6dp">
+
+        <include layout="@layout/tab_bar_learn"/>
+        <ImageView
+            android:id="@+id/leanrn_search_iv"
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="@dimen/title_bar_height"
+            android:padding="15dp"
+            android:src="@drawable/learn_search"/>
+    </LinearLayout>
+</FrameLayout>

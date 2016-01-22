@@ -1,0 +1,13 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_tab_city"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_gravity="center_vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:gravity="center_vertical"
+    android:singleLine="true"
+    android:ellipsize="end"
+    android:textColor="@color/secondary_text_dark"
+    android:textSize="@dimen/text_size_button"/>

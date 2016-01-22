@@ -1,0 +1,16 @@
+<!-- 会话时间显示 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:state_selected="false">
+        <shape android:shape="oval">
+            <corners android:radius="4dp"/>
+            <solid android:color="#ffaaaaaa"/>
+        </shape>
+    </item>
+
+    <item android:state_checked="true" android:state_selected="false">
+        <shape android:shape="oval">
+            <corners android:radius="4dp"/>
+            <solid android:color="@color/primary"/>
+        </shape>
+    </item>
+</selector>

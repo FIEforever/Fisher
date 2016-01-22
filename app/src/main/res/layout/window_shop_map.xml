@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="280dp"
+    android:orientation="horizontal"
+    android:background="@drawable/window_info"
+    tools:context="com.dg11185.car.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+        android:id="@+id/map_shop_detail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:clickable="true"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/map_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxWidth="240dp"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/text_size_button"/>
+
+        <TextView
+            android:id="@+id/map_shop_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:maxWidth="240dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/secondary_text_dark"
+            android:textSize="@dimen/text_size_body"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/map_shop_route"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:gravity="center"
+        android:text="查看\n线路"
+        android:clickable="true"
+        android:lineSpacingMultiplier="1.25"
+        android:textSize="@dimen/text_size_subhead"
+        android:textColor="@color/primary_text_light"
+        android:background="@color/primary"/>
+
+</LinearLayout>

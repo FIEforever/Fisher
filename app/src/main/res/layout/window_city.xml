@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/window_background"
+    tools:context="com.dg11185.car.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/background_light">
+
+        <!-- ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="240dp" -->
+            <GridView
+                android:id="@+id/city_grid"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:descendantFocusability="beforeDescendants"
+                android:numColumns="3"
+                android:choiceMode="singleChoice"
+                android:horizontalSpacing="16dp"
+                android:verticalSpacing="16dp"/>
+        <!-- /ScrollView-->
+
+        <LinearLayout
+            android:id="@+id/city_change"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_button_city">
+
+            <TextView
+                android:id="@+id/city_current"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/secondary_text_dark"
+                android:textSize="@dimen/text_size_button"
+                android:text="当前城市：东莞"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/text_size_button"
+                android:text="切换城市"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="bottom|center_horizontal"
+    android:background="#08FFFFFF" >
+    <RelativeLayout
+        android:id="@+id/add_icon_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_bottom_rl"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/add_get_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:drawableTop="@drawable/home_type_yuhuo"
+            android:text="发渔获" />
+        <TextView
+            android:id="@+id/add_tool_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_toRightOf="@+id/add_get_tv"
+            android:clickable="true"
+            android:gravity="center"
+            android:drawableTop="@drawable/home_type_yuju"
+            android:text="晒渔具" />
+
+        <TextView
+            android:id="@+id/add_ask_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_below="@+id/add_get_tv"
+            android:layout_marginRight="40dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:drawableTop="@drawable/home_type_wenda"
+            android:text="问技巧" />
+        <TextView
+            android:id="@+id/add_mall_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_below="@+id/add_tool_tv"
+            android:layout_toRightOf="@+id/add_ask_tv"
+            android:clickable="true"
+            android:gravity="center"
+            android:drawableTop="@drawable/home_type_diaochangda"
+            android:text="加钓场" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_bottom_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/center_music_window_close"
+            android:layout_width="@dimen/bottom_icon_height"
+            android:layout_height="@dimen/bottom_icon_height"
+            android:padding="2dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/bottom_bar_close"/>
+    </RelativeLayout>
+</RelativeLayout>

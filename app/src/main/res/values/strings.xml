@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">钓鱼人</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_mall">钓场</string>
+    <string name="tab_add">添加</string>
+    <string name="tab_learn">学堂</string>
+    <string name="tab_user">我</string>
+    <string name="title_bar_return">返回</string>
+    <string name="title_bar_title">标题</string>
+    <string name="title_bar_action">操作</string>
+    <string name="title_bar_search_hint">请输入关键字</string>
+    <!-- common string -->
+    <string name="common_current_city">城市</string>
+    <string name="common_empty_search">无搜索结果</string>
+
+    <!-- 商家模块 -->
+    <string name="activity_map">地图</string>
+    <string name="activity_province">选择省份</string>
+    <string name="activity_city">选择城市</string>
+    <string name="activity_picture">相册</string>
+    <string name="activity_search">商家搜索</string>
+    <string name="activity_shop">商家列表</string>
+    <string name="activity_shop_detail">商家详情</string>
+
+    <string name="learn_artcle_detail">文章详情</string>
+    <string name="learn_artcle_detail_video">视频详情</string>
+    <string name="activity_web_view_null"></string>
+</resources>

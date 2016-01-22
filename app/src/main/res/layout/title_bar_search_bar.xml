@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 顶级布局顶部标题显示栏 -->
+<LinearLayout
+    android:id="@+id/title_bar_search_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height_no_Navigation"
+    android:background="@color/primary"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/title_bar_return"
+        style="@style/ItemBackground"
+        android:layout_width="@dimen/title_bar_height_no_Navigation"
+        android:layout_height="@dimen/title_bar_height_no_Navigation"
+        android:clickable="true"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:padding="14dp"
+        android:src="@drawable/title_bar_return"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_editor_search"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/title_bar_editor"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_home_search"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_home_search"
+            android:gravity="center_vertical"
+            android:hint="请输入商家名称/地址"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/secondary_text_dark"
+            android:textColorHint="@color/tertiary_text_dark"
+            android:textSize="@dimen/text_size_button"/>
+
+        <ImageView
+            android:id="@+id/title_bar_clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:padding="12dp"
+            android:src="@drawable/ic_input_clear"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</LinearLayout>

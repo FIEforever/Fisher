@@ -1,0 +1,135 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.DesignDemo">
+        <item name="android:textColorHint">@color/tertiary_text_dark</item>
+        <!-- Customize your theme here. -->
+        <!--item name="android:fastScrollThumbDrawable">@drawable/fastscroll_thumb_holo</item-->
+    </style>
+
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="PictureTheme" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:textColorHint">@color/tertiary_text_dark</item>
+    </style>
+
+    <style name="ItemBackground">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ItemBackgroundBorderless" parent="ItemBackground">
+    </style>
+    <!-- 商家分类项风格 -->
+    <style name="ItemShopClassify">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.8</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/secondary_text_dark</item>
+        <item name="android:textSize">@dimen/text_size_caption</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <!-- 分割线 -->
+    <style name="DivideLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <!-- 分割线 -->
+    <style name="DivideItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:background">@color/background_app</item>
+    </style>
+
+    <!-- RadioGroupStyle -->
+    <style name="RadioGroupStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/background_light</item>
+    </style>
+
+    <!-- RadioButtonStyle -->
+    <style name="RadioButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:textSize">@dimen/text_size_subhead</item>
+        <item name="android:textColor">@drawable/tab_bar_text</item>
+    </style>
+
+    <!-- 空内容/网络错误提醒视图 -->
+    <style name="EmptyView">
+        <item name="android:id">@id/empty_view</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawableTop">@drawable/ic_empty</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/tertiary_text_dark</item>
+        <item name="android:textSize">@dimen/text_size_subhead</item>
+    </style>
+
+    <!-- 进度指示视图 -->
+    <style name="ProgressView">
+        <item name="android:id">@id/progress_view</item>
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawableTop">@drawable/ic_empty</item>
+    </style>
+
+    <!-- TextView -->
+    <style name="TextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_subhead</item>
+        <item name="android:textColor">@color/secondary_text_dark</item>
+    </style>
+    <style name="UserMyTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="UserMessageTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabSelectedTextColor">@color/primary</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/secondary_text_dark</item>
+    </style>
+</resources>

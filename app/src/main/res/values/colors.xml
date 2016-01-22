@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#FFF5F5F5</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="primary">#ff41ba13</color>		<!-- 主色调 #ff9800 -->
+    <color name="primary_dark">#ff2ca40d</color>  <!-- 主色调深30% dark alpha value -->
+    <color name="primary_sub_dark">#ff2ca40d</color><!-- 主色调深20% dark alpha value -->
+
+    <!--<color name="primary_dark">#b85d00</color>	&lt;!&ndash; 主色调深 &ndash;&gt;-->
+    <color name="primary_yellow">#f57c00</color>       <!-- 黄色主题 -->
+    <color name="primary_default">#ff8ab704</color>    <!-- 默认选择项提醒色-->
+    <color name="primary_default_dark">#ff2b952b</color>
+    <color name="primary_stress">#ffcc0000</color>  <!-- 系统强调色 -->
+    <color name="primary_stress_dark">#ff9d0000</color>  <!-- 系统强调色 -->
+    <color name="primary_red">#ffff4242</color>    <!-- 系统红 -->
+    <color name="primary_pink">#ffed3957</color>     <!-- 粉红色 -->
+    <color name="background_material">#ffeeeeee</color> <!-- 原子风格背景色-->
+    <color name="background_holo">#ffdddddd</color> <!-- Holo风格背景色 -->
+    <color name="background_app">#ffe8eaf6</color><!-- 背景色 -->
+    <color name="background_light">#fffafafa</color><!-- 背景色 -->
+    <color name="background_press">#05777777</color>
+    <color name="background_no">#00000000</color><!-- 背景色 -->
+
+    <color name="divider">#40ababab</color>
+    <color name="divider_material">#ffeeeeee</color>
+
+    <!-- waring -->
+    <color name="security_low">@color/primary_stress</color>
+    <color name="security_middle">@color/primary</color>
+    <color name="security_high">@color/primary_default</color>
+
+    <!-- text color -->
+    <color name="primary_text_dark">#ab000000</color> <!-- 87% dark -->
+    <color name="secondary_text_dark">#8a000000</color> <!-- 54% dark -->
+    <color name="tertiary_text_dark">#62000000</color> <!-- 26% dark -->
+    <color name="primary_text_light">#ffffffff</color> <!-- 100% white -->
+    <color name="secondary_text_light">#deffffff</color> <!-- 87% white -->
+    <color name="tertiary_text_light">#8affffff</color> <!-- 54% white -->
+
+    <color name="button_type1">#ff8ab704</color>
+    <color name="button_type1_press">#ff72ac03</color>
+    <color name="button_type2">#fff5f5f5</color>
+    <color name="button_type2_press">#ffe8e8e8</color>
+    <color name="button_type3">#ffff8a00</color>
+    <color name="button_type3_press">#fff17700</color>
+
+    <color name="white">#ffffffff</color><!-- white -->
+    <color name="black">#ff666666</color><!-- black -->
+    <color name="green">#ff00aa00</color><!-- green -->
+    <color name="transparent_white">#66ffffff</color>
+    <color name="gray_light">#ff8b8b8b</color>
+    <color name="black_deep">#00000000</color>
+
+    <!-- widget color -->
+    <color name="bottom_bar_text_normal">#ff9e9e9e</color>	<!-- 深灰色 -->
+    <color name="bottom_bar_text_checked">@color/primary</color>	<!-- 主色调 -->
+    <color name="notice_num_bg">@color/primary_stress</color>		<!-- 提醒背景色 -->
+    <color name="notice_num_fg">@android:color/white</color>		<!-- 提醒前景色 -->
+    <color name="splite_line">#9a9e9e9e</color>	<!-- 透明灰色 -->
+    <color name="popwindow">#7f000000</color> <!-- pop window 灰色背景-->
+    <color name="button_border">#10000000</color> <!-- 按钮边框色 -->
+    <color name="button_disable">#757575</color>
+    <color name="button_pressed">#1976a5</color>
+    <!--RippleView-->
+    <color name="rippelViewColor">#FFFFFF</color>
+    <color name="rippelBackgroundColor">#0099CC</color>
+</resources>

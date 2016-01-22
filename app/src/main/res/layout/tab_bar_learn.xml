@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab_bar_learn_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:baselineAligned="false">
+
+    <RadioGroup
+        android:id="@+id/tab_host"
+        style="@style/RadioGroupStyle">
+
+        <RadioButton
+            android:id="@+id/tab_bar1"
+            style="@style/RadioButtonStyle"
+            android:checked="true"
+            android:text="最新"/>
+
+        <RadioButton
+            android:id="@+id/tab_bar2"
+            style="@style/RadioButtonStyle"
+            android:text="入门"/>
+
+        <RadioButton
+            android:id="@+id/tab_bar3"
+            style="@style/RadioButtonStyle"
+            android:text="技巧"/>
+
+        <RadioButton
+            android:id="@+id/tab_bar4"
+            style="@style/RadioButtonStyle"
+            android:text="鱼饵"/>
+
+        <RadioButton
+            android:id="@+id/tab_bar5"
+            style="@style/RadioButtonStyle"
+            android:text="视频"/>
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/tab_bar"
+        android:layout_width="50dp"
+        android:layout_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary"/>
+</RelativeLayout>

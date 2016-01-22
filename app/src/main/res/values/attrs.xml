@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2014 Robin Chutaux
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<resources>
+    <declare-styleable name="RippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer"/>
+        <attr name="rv_rippleDuration" format="integer"/>
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0"/>
+            <enum name="doubleRipple" value="1"/>
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color" />
+        <attr name="rb_strokeWidth" format="dimension"/>
+        <attr name="rb_radius" format="dimension"/>
+        <attr name="rb_duration" format="integer"/>
+        <attr name="rb_rippleAmount" format="integer"/>
+        <attr name="rb_scale" format="float"/>
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0"/>
+            <enum name="strokeRipple" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- com.dg11185.graphics.drawables -->
+
+    <!-- Background Drawable of View's -->
+    <attr name="backgroundCompat" format="reference" />
+    <!-- Drawable used to show image in ImageView. -->
+    <attr name="srcCompat" format="reference" />
+    <!-- Extra attribute for RippleDrawable, to add support of scroll containers -->
+    <attr name="isInScrollContainer" format="boolean" />
+
+    <!-- Drawable used to show animated touch feedback. -->
+    <declare-styleable name="RippleDrawable">
+        <!-- The color to use for ripple effects. This attribute is required. -->
+        <attr name="android:color"/>
+    </declare-styleable>
+
+    <!-- Drawable used to render several drawables stacked on top of each other.
+         Each child drawable can be controlled individually. -->
+    <declare-styleable name="LayerDrawable">
+        <!-- Indicates whether the drawable should be initially visible. -->
+        <attr name="android:visible"/>
+        <!-- Indicates the opacity of the layer. This can be useful to allow the
+              system to enable drawing optimizations. The default value is
+              translucent. -->
+        <attr name="android:opacity"/>
+        <!-- Indicates if the drawable needs to be mirrored when its layout direction is
+             RTL (right-to-left). -->
+        <attr name="android:autoMirrored"/>
+        <!-- Indicates how layer padding should affect the bounds of subsequent layers.
+             The default padding mode value is nest. -->
+        <attr name="android:paddingMode"/>
+    </declare-styleable>
+
+    <!-- Describes an item (or child) of a LayerDrawable. -->
+    <declare-styleable name="LayerDrawableItem">
+        <!-- Left coordinate of the layer. -->
+        <attr name="android:left"/>
+        <!-- Top coordinate of the layer. -->
+        <attr name="android:top"/>
+        <!-- Right coordinate of the layer. -->
+        <attr name="android:right"/>
+        <!-- Bottom coordinate of the layer. -->
+        <attr name="android:bottom"/>
+        <!-- Drawable used to render the layer. -->
+        <attr name="android:drawable"/>
+        <!-- Identifier of the layer. This can be used to retrieve the layer
+             from a drawable container. -->
+        <attr name="android:id"/>
+    </declare-styleable>
+
+
+    <!-- com.dg11185.ui.BackgroundCardView -->
+    <declare-styleable name="BackgroundCardView">
+        <attr name="android:background"/>
+    </declare-styleable>
+
+</resources>

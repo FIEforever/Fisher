@@ -1,0 +1,40 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/window_info"
+    android:minWidth="280dp"
+    android:orientation="vertical"
+    tools:context="com.dg11185.nearshop.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+    <TextView
+        android:id="@+id/map_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:text="以纯（南城步行街店）"
+        android:textColor="@color/primary_text_light"
+        android:textSize="@dimen/text_size_subhead"/>
+
+    <com.dg11185.ui.ScrollListView
+        android:id="@+id/map_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:divider="@color/background_light"
+        android:dividerHeight="1dp"/>
+
+    <TextView
+        android:id="@+id/group_empty"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="暂无团购信息"
+        android:textColor="@color/secondary_text_dark"
+        android:textSize="@dimen/text_size_body"
+        android:visibility="gone"/>
+</LinearLayout>
