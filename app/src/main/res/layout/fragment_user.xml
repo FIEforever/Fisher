@@ -127,7 +127,6 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginLeft="5dp"
                 android:background="@color/divider"/>
             <LinearLayout
                 android:id="@+id/user_my_add_fishing_layout"

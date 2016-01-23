@@ -20,7 +20,7 @@
 
     <TextView
         style="@style/EmptyView"
-        android:text="暂无话题"
+        android:text="暂无数据"
         android:visibility="gone"/>
 
     <ProgressBar

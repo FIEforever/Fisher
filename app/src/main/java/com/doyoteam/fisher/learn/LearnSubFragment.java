@@ -30,7 +30,8 @@ public class LearnSubFragment extends Fragment {
     private RecyclerView recyclerView;  // 列表
     private LearnAdapter adapter;         // 适配器
     private int articleType;                // 类型
-    private List<Article> articleList;      // 列表
+    private List<Article> articleList;      // 文章列表
+    private List<Article> recommendList;    //推荐列表
     private Page pageInfo;
 
     private SwipeRefreshLayout swipeRefreshLayout;
@@ -58,7 +59,8 @@ public class LearnSubFragment extends Fragment {
             articleType = getArguments().getInt("ARTICLE_TYPE");
         }
         articleList = new ArrayList<>();
-        adapter = new LearnAdapter(getActivity(), articleType, articleList);
+        recommendList = new ArrayList<>();
+        adapter = new LearnAdapter(getActivity(), articleType, articleList,recommendList);
         continueLoad = true;
     }
 
@@ -166,24 +168,17 @@ public class LearnSubFragment extends Fragment {
             public void onSuccess(LearnHttpOut result) {
                 String status = result.getStatus();
                 if (status.equals("SUCCESS")) {
-                    if(result.getPage()!=null)
-                    {
+                    if (result.getPage() != null) {
                         pageInfo = result.getPage();
-                        if(pageInfo.nextPage.equals("null"))
-                        {
+                        if (pageInfo.nextPage.equals("null")) {
                             continueLoad = false;
-                        }
-                        else
-                        if(Integer.parseInt(pageInfo.nextPage) > Integer.parseInt(pageInfo.pageCount))
-                        {
+                        } else if (Integer.parseInt(pageInfo.nextPage) > Integer.parseInt(pageInfo.pageCount)) {
                             continueLoad = false;
-                        }
-                        else
-                        {
+                        } else {
                             continueLoad = true;
                         }
                     }
-                    setArticleData(result.getArticleArrayList());
+                    setArticleData(result.getArticleArrayList(), result.getRecommendArrayList());
                 } else {
                     Tools.showToast(status);
                 }
@@ -196,12 +191,17 @@ public class LearnSubFragment extends Fragment {
         });
         HttpClient.get(request);
     }
-    private void setArticleData(ArrayList<Article> articleArrayList)
+    private void setArticleData(ArrayList<Article> articleArrayList,ArrayList<Article> recommendArrayList)
     {
         swipeRefreshLayout.setRefreshing(false);
         setEmptyView(null);
         swipeRefreshLayout.setRefreshing(false);
         articleList.addAll(articleArrayList);
+        if(recommendArrayList!=null)
+            if(recommendArrayList.size()>=3)
+            {
+                recommendList.addAll(recommendArrayList);
+            }
 //        if (articleArrayList.size() == articleList.size()) continueLoad = false;
         adapter.notifyDataSetChanged();
         if (articleList.size() == 0) {

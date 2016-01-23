@@ -2,7 +2,6 @@ package com.doyoteam.fisher.net.learn;
 
 import com.doyoteam.fisher.db.bean.Article;
 import com.doyoteam.fisher.db.bean.Page;
-import com.doyoteam.fisher.db.bean.Post;
 import com.doyoteam.fisher.net.HttpOut;
 
 import org.json.JSONArray;
@@ -76,26 +75,29 @@ public class LearnHttpOut extends HttpOut {
                 page.nextPage = page_info.getString("nextPage");
                 page.perPage = page_info.getString("perPage");
 
-//                JSONArray recommend = data.getJSONArray("recommend");
-//                recommendArrayList = new ArrayList<Article>();
-//                for(int i=0; i<recommend.length(); i++)
-//                {
-//                    JSONObject jsonObject = recommend.getJSONObject(i);
-//                    Article article = new Article();
-//                    article.id = jsonObject.getString("id");
-//                    article.typeid = jsonObject.getString("typeid");
-//                    article.channel = jsonObject.getString("channel");
-//                    article.title = jsonObject.getString("title");
-//                    article.writer = jsonObject.getString("writer");
-//                    article.litpic = jsonObject.getString("litpic");
-//                    article.pubdate = jsonObject.getString("pubdate");
-//                    article.description = jsonObject.getString("description");
-//                    article.click = jsonObject.getString("click");
-//                    article.goodpost = jsonObject.getString("goodpost");
-//                    article.format_pubdate = jsonObject.getString("format_pubdate");
-//                    article.detail_url = jsonObject.getString("detail_url");
-//                    recommendArrayList.add(article);
-//                }
+                recommendArrayList = new ArrayList<Article>();
+                if(!data.isNull("recommend"))
+                {
+                    JSONArray recommend = data.getJSONArray("recommend");
+                    for(int i=0; i<recommend.length(); i++)
+                    {
+                        JSONObject jsonObject = recommend.getJSONObject(i);
+                        Article article = new Article();
+                        article.id = jsonObject.getString("id");
+                        article.typeid = jsonObject.getString("typeid");
+                        article.channel = jsonObject.getString("channel");
+                        article.title = jsonObject.getString("title");
+                        article.writer = jsonObject.getString("writer");
+                        article.litpic = jsonObject.getString("litpic");
+                        article.pubdate = jsonObject.getString("pubdate");
+                        article.description = jsonObject.getString("description");
+                        article.click = jsonObject.getString("click");
+                        article.goodpost = jsonObject.getString("goodpost");
+                        article.senddate = jsonObject.getString("senddate");
+                        article.detail_url = jsonObject.getString("detail_url");
+                        recommendArrayList.add(article);
+                    }
+                }
             }
         } catch (JSONException e) {
             e.printStackTrace();

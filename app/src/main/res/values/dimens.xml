@@ -39,4 +39,6 @@
     <dimen name="learn_article_like_icon">22dp</dimen>
     <dimen name="icon_post_height">56dp</dimen>
     <dimen name="icon_size_user_item">36dp</dimen>
+    <dimen name="learn_article_image_height">76dp</dimen>
+    <dimen name="learn_article_image_width">120dp</dimen>
 </resources>
